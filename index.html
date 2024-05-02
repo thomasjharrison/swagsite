@@ -56,10 +56,21 @@ font-weight: normal;
   <h3></h3>
   <p1 id="randomresult"></p1>
   <h2>Full List</h1>
-  <button class="btn" onclick="one()">1</button>
+  <button class="btn" id="list1">1</button>
+  <h3></h3>
+  <p1 id="item1"></p1>
 </div>
 
 <script>
+var flower = [
+"🌼",
+"🌸",
+"🌷",
+"🪻",
+"🌹",
+"💐"
+];
+
 var text = [
 "First paragraph text",
 "Second paragraph text",
@@ -69,7 +80,15 @@ var text = [
 ];
 
 document.getElementById("random").onclick = function() {
-document.getElementById("randomresult").innerHTML = text[Math.floor(Math.random() * text.length)];
+document.getElementById("randomresult").innerHTML = flower[Math.floor(Math.random() * flower.length)] + " " + text[Math.floor(Math.random() * text.length)];
+}
+
+document.getElementById("list1").onclick = function() {
+if (document.getElementById("item1").innerHTML == "") {
+  document.getElementById("item1").innerHTML = "test"
+} else {
+  document.getElementById("item1").innerHTML = ""
+}
 }
 </script>
  
