@@ -3,8 +3,6 @@
 <body>
 <style>
 
-  *{font-family:Algerian;}
-  
 body {
   background-image: url('https://images.pexels.com/photos/1183434/pexels-photo-1183434.jpeg?cs=srgb&dl=pexels-amir-1183434.jpg&fm=jpg');
   background-repeat: no-repeat;
@@ -13,6 +11,7 @@ body {
 }
 * {
   box-sizing: border-box;
+  font-family: Verdana;
 }
 
 body {
@@ -55,10 +54,25 @@ body {
 <div class="header" id="myHeader">
   <h1>Thomasj's (Non-Exhaustive) List of Things to do When You Need Alone Time</h1>
   <h2>Generate Random:</h1>
-  <button class="btn" onclick="one()">Click me :3</button>
+  <button class="btn" onclick="one()" id="random">Click me :3</button>
+  <p1 id="randomresult"></p1>
   <h2>Full List:</h1>
   <button class="btn" onclick="one()">1</button>
 </div>
 
+<script>
+var text = [
+"First paragraph text",
+"Second paragraph text",
+"Third paragraph text",
+"Fourth paragraph text",
+"Fifth paragraph text"
+];
+
+document.getElementById("random").onclick = function() {
+document.getElementById("randomresult").innerHTML = text[Math.floor(Math.random() * text.length)];
+}
+</script>
+ 
 </body>
 </html>
