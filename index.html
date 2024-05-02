@@ -231,7 +231,7 @@ var text = [
 "Read a book.",
 "Shoot 100 bots in the shooting range.",
 "Read a manga.",
-"Play Wordle, Rankdle.",
+"Play Wordle or Rankdle or some other web game.",
 "Finish something you left unfinished.",
 "Watch a random small streamer.",
 "Search for the funniest cat video on the entire internet...",
@@ -278,11 +278,11 @@ if (document.getElementById("item3").innerHTML == "") {
 }
 
 document.getElementById("list4").onclick = function() {
-if (document.getElementById("item3").innerHTML == "") {
-  document.getElementById("item3").style.padding = '15px';
+if (document.getElementById("item4").innerHTML == "") {
+  document.getElementById("item4").style.padding = '15px';
   document.getElementById("item4").innerHTML = flower[Math.floor(Math.random() * flower.length)] + " " + text[3]
 } else {
-  document.getElementById("item3").style.padding = '0px';
+  document.getElementById("item4").style.padding = '0px';
   document.getElementById("item4").innerHTML = ""
 }
 }
