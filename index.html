@@ -48,7 +48,7 @@ h3
 font-weight: normal;
 }
 
-p1
+p
 {
 background-color: rgba(201, 110, 212, 0.4);
 }
@@ -184,6 +184,17 @@ background-color: rgba(201, 110, 212, 0.4);
 </div>
 
 <script>
+var url = ['https://images.pexels.com/photos/1183434/pexels-photo-1183434.jpeg?cs=srgb&dl=pexels-amir-1183434.jpg&fm=jpg' ,
+        'https://hips.hearstapps.com/hmg-prod/images/cute-cat-photos-1593441022.jpg?crop=0.670xw:1.00xh;0.167xw,0&resize=640:*'];
+curentImageIndex = 0;
+setInterval(function(){ 
+ console.log(url[curentImageIndex])
+ var p = $('.image-head');
+  p.css("background","url("+url[curentImageIndex++] + ")");
+  if(curentImageIndex>= url.length){curentImageIndex = 0}
+ }, 1000);
+
+  
 var flower = [
 "🌼",
 "🌸",
