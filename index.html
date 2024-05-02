@@ -56,9 +56,26 @@ font-weight: normal;
   <h3></h3>
   <p1 id="randomresult"></p1>
   <h2>Full List</h1>
-  <button class="btn" id="list1">1</button>
+  <button class="btn" id="list1">Thingy 1</button>
   <h3></h3>
   <p1 id="item1"></p1>
+  <h3></h3>
+  <button class="btn" id="list2">Thingy 2</button>
+  <h3></h3>
+  <p1 id="item2"></p1>
+  <h3></h3>
+  <button class="btn" id="list3">Thingy 3</button>
+  <h3></h3>
+  <p1 id="item3"></p1>
+  <h3></h3>
+  <button class="btn" id="list4">Thingy 4</button>
+  <h3></h3>
+  <p1 id="item4"></p1>
+  <h3></h3>
+  <button class="btn" id="list5">Thingy 5</button>
+  <h3></h3>
+  <p1 id="item5"></p1>
+  <h3></h3>
 </div>
 
 <script>
@@ -85,9 +102,41 @@ document.getElementById("randomresult").innerHTML = flower[Math.floor(Math.rando
 
 document.getElementById("list1").onclick = function() {
 if (document.getElementById("item1").innerHTML == "") {
-  document.getElementById("item1").innerHTML = "test"
+  document.getElementById("item1").innerHTML = text[0]
 } else {
   document.getElementById("item1").innerHTML = ""
+}
+}
+
+document.getElementById("list2").onclick = function() {
+if (document.getElementById("item2").innerHTML == "") {
+  document.getElementById("item2").innerHTML = text[1]
+} else {
+  document.getElementById("item2").innerHTML = ""
+}
+}
+
+document.getElementById("list3").onclick = function() {
+if (document.getElementById("item3").innerHTML == "") {
+  document.getElementById("item3").innerHTML = text[2]
+} else {
+  document.getElementById("item3").innerHTML = ""
+}
+}
+
+document.getElementById("list4").onclick = function() {
+if (document.getElementById("item4").innerHTML == "") {
+  document.getElementById("item4").innerHTML = text[3]
+} else {
+  document.getElementById("item4").innerHTML = ""
+}
+}
+
+document.getElementById("list5").onclick = function() {
+if (document.getElementById("item5").innerHTML == "") {
+  document.getElementById("item5").innerHTML = text[4]
+} else {
+  document.getElementById("item5").innerHTML = ""
 }
 }
 </script>
