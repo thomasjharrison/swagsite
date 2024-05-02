@@ -56,7 +56,7 @@ font-weight: normal;
   <h2>Generate Random</h1>
   <button class="btn" onclick="one()" id="random">Click me :3</button>
   <h3></h3>
-  <p1 style="background-color: rgba(201, 110, 212, 0.4); padding: 15px; border-radius: 7px;" id="randomresult"></p1>
+  <p1 style="background-color: rgba(201, 110, 212, 0.4); padding: 15px; border-radius: 7px; visibility:'hidden';" id="randomresult"></p1>
   <h2>Full List</h1>
   <button class="btn" id="list1">Thingy 1</button>
   <h3></h3>
@@ -243,6 +243,7 @@ var text = [
 ];
 
 document.getElementById("random").onclick = function() {
+document.getElementById("randomresult").visibility = 'visible';
 document.getElementById("randomresult").innerHTML = flower[Math.floor(Math.random() * flower.length)] + " " + text[Math.floor(Math.random() * text.length)];
 }
 
